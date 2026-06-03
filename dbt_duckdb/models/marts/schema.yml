@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: fct_sales
+    description: Sales fact table at invoice line grain.
+    columns:
+      - name: invoice_no
+        tests:
+          - not_null
+      - name: stock_code
+        tests:
+          - not_null
+      - name: total_amount
+        tests:
+          - not_null
+  - name: dim_product
+    description: Product dimension built from unique stock codes.
+    columns:
+      - name: stock_code
+        tests:
+          - not_null
+  - name: monthly_revenue
+    description: Monthly revenue mart for BI/reporting.

@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: retail
+    description: Raw/staging tables loaded by the Python ETL pipeline.
+    tables:
+      - name: staging_sales
+        description: Cleaned transactional sales data loaded into DuckDB.
+        columns:
+          - name: invoice_no
+            tests:
+              - not_null
+          - name: stock_code
+            tests:
+              - not_null
+          - name: invoice_date
+            tests:
+              - not_null

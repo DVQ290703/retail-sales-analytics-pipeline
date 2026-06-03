@@ -4,3 +4,6 @@ duckdb
 python-dotenv
 pyspark==3.5.1
 pyarrow
+dbt-duckdb
+psycopg[binary]
+delta-spark==3.2.0

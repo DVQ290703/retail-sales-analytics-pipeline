@@ -1,0 +1,22 @@
+{
+  "name": "retail-postgres-connector",
+  "config": {
+    "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+    "plugin.name": "pgoutput",
+    "database.hostname": "postgres",
+    "database.port": "5432",
+    "database.user": "retail",
+    "database.password": "retail",
+    "database.dbname": "retail_oltp",
+    "topic.prefix": "retail",
+    "schema.include.list": "public",
+    "table.include.list": "public.customers,public.products,public.orders,public.order_lines",
+    "slot.name": "retail_debezium_slot",
+    "publication.name": "retail_publication",
+    "publication.autocreate.mode": "filtered",
+    "snapshot.mode": "initial",
+    "tombstones.on.delete": "false",
+    "decimal.handling.mode": "double",
+    "include.schema.changes": "false"
+  }
+}

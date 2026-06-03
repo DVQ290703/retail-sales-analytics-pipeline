@@ -33,8 +33,19 @@ Thumbs.db
 data/bronze/
 data/silver/
 data/gold/
+data/spark_lakehouse/
+data/delta_lakehouse/
+data/cdc/
 
 # Spark local files
 spark-warehouse/
 metastore_db/
 derby.log
+
+# Local service data
+docker/data/
+
+# dbt local artifacts
+dbt_duckdb/target/
+dbt_duckdb/dbt_packages/
+dbt_duckdb/logs/
