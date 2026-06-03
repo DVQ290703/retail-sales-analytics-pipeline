@@ -5,5 +5,5 @@ python-dotenv
 pyspark==3.5.1
 pyarrow
 dbt-duckdb
-psycopg[binary]
+pg8000
 delta-spark==3.2.0

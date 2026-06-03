@@ -172,6 +172,12 @@ This covers:
 
 Use this only if Docker is available and you want real Kafka/Debezium/Trino services.
 
+Install the latest project dependencies first:
+
+```bash
+pip install -r requirements.txt
+```
+
 Start services:
 
 ```bash

@@ -38,6 +38,14 @@ Trino
 
 ## Start Services
 
+Make sure the local virtual environment has the latest dependencies:
+
+```powershell
+pip install -r requirements.txt
+```
+
+The Postgres loader uses `pg8000`, a pure-Python driver, so it does not require local `libpq` installation on Windows.
+
 ```powershell
 docker compose up -d postgres zookeeper kafka connect minio trino
 ```
