@@ -28,3 +28,13 @@ reports/output/
 Thumbs.db
 .vscode/
 .idea/
+
+# Lakehouse layers
+data/bronze/
+data/silver/
+data/gold/
+
+# Spark local files
+spark-warehouse/
+metastore_db/
+derby.log
